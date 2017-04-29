@@ -5,10 +5,10 @@ using UnityEngine.Events;
 
 public class HealthComponent : MonoBehaviour
 {
-    public int health;
+    public float health;
     public UnityEvent onDeath;
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         if (health <= 0)
             return;
